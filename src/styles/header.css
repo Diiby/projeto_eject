@@ -1,10 +1,10 @@
 header {
     width: 100%;
     padding: 20px 44px 20px 44px;
-    position: relative;
+    position: fixed;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     background-color: #1B4271;
-    z-index: 2;
+    z-index: 3;
 }
 
 #navbar {
