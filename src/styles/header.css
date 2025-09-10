@@ -1,13 +1,15 @@
 header {
     width: 100%;
     padding: 20px 44px 20px 44px;
-    position: sticky;
+    position: relative;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     background-color: #1B4271;
+    z-index: 2;
 }
 
-.navbar {
+#navbar {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;  
     margin-left: 10px;
@@ -39,4 +41,5 @@ header {
     padding: 10px;
     background-color: #ffffff;
     border-radius: 10px;
+    margin-right: 10px;
 }
