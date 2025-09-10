@@ -9,6 +9,7 @@
     width: 100%;
     /* position: relative; */
     
+    
 } 
 
 #home img {
@@ -30,17 +31,18 @@
 }
 #cta {
     display: flex;
-    align-items: center;
-    justify-content: left;
+    align-items: left;
+    justify-content: center;
     text-align: left;
     width: 55%;
     z-index: 2;
-    
+    flex-direction: column;
 }
 #cta .title {
     font-size: 74px;
     color: #FFFFFF;
     font-weight: bold;
+    /* align-items: center; */
 }
 
 #cta a {
@@ -51,9 +53,12 @@
     color: white;
     font-weight: bold;
     border-radius: 20px;
-   
 }
 
+#teste {
+    margin-top: 60px;
+
+}
 
 #beneficios {
     width: 100%;
