@@ -64,3 +64,80 @@
     display: flex;
     background-color: rgb(46, 45, 45);
 }
+
+/* Estilos do Rodapé */
+#footer {
+  background-color: #1B4271;
+  color: #ffffff;
+  padding: 20px; 
+  font-family: Arial, sans-serif;
+}
+
+/* Container que agrupa as colunas */
+.footer-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* Estilo todas as colunas */
+.footer-column {
+  flex: 1; 
+  min-width: 250px; 
+  padding: 0 15px; 
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-column p, .footer-column li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #cccccc;
+}
+
+/* Lista da seção "Informações" */
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+}
+
+/* Linha de Copyright */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 13px;
+  text-align: left;
+}
