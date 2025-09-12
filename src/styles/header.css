@@ -1,10 +1,16 @@
 header {
     width: 100%;
-    padding: 20px 44px 20px 44px;
     position: fixed;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     background-color: #1B4271;
-    z-index: 3;
+    z-index: 10;
+}
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
 }
 
 #navbar {
@@ -14,12 +20,16 @@ header {
     justify-content: space-between;  
     margin-left: 10px;
     margin-right: 10px;
-    gap: 10%;
-    
+    /* gap: 10%;   */
+    padding: 20px 44px 20px 44px;
+
+}
+
+.menu {
+    gap: 38px;
 }
 
 .menu a {
-    padding: 20px;
     text-decoration: none;
     color: #FFFFFF;
     font-size: 18px;
@@ -33,7 +43,7 @@ header {
     padding-bottom: 10px;
 }
 
-.btn-inscrever a{
+.btn-inscrever {
     color: #000000;
     font-weight: bold;
     font-size: 18px;

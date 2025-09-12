@@ -1,39 +1,46 @@
+/* ------> SEÇÃO 2 <----- */
+
 .container-main {
     width: 100%;
-
 }
 
 #home {
     display: flex;
     min-height: calc(800px + 98.79px);
-    width: 100%;  
+    position: relative; 
+    background-size: cover;
+    gap: 71px;
     
 } 
 
-#home img {
+#home .bg-home {
     position: absolute;
+    width: 100%;
     z-index: 0;
-    margin-left: -4px;
+    margin-top: -8px;
+    margin-left: -5px;
 }
 
 #mockup {
     display: flex;
-    width: 45%;  
+    max-width: 417px;  
     align-items: end;
-    margin-right: 100px;
-    justify-content: right;
     position: relative;
     z-index: 2;
+    margin-left: 255px;
 }
+
 #cta {
     display: flex;
     align-items: left;
-    justify-content: center;
+    justify-content: start;
     text-align: left;
-    width: 55%;
+    max-width: 751px;
     z-index: 2;
     flex-direction: column;
+    margin-top: calc(98.79px + 213px);
 }
+
 #cta .title {
     font-size: 74px;
     color: #FFFFFF;
@@ -54,94 +61,3 @@
     margin-top: 60px;
 
 }
-
-#beneficios {
-    width: 100%;
-    height: 756px;
-    display: flex;
-    background-color: rgb(46, 45, 45);
-}
-
-#container-books {
-    display: flex;
-    max-width: 100%;
-    height: 784px;
-    align-items: center;
-    /* justify-content: space-between;  */
-    text-align: center;
-    margin: 0 auto;
-}
-
-.bg-books {
-    background: linear-gradient(to right, #2C6FB3, #0E2646);
-    
-}
-
-#books-title {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    /* margin-right: 54px; */
-    /* position: relative; */
-}
-
-#books-title h1 {
-    text-align: left;
-    font-size: 64px;
-    font-weight: bold;
-    color: #FFFFFF;
-    margin-left: -54px;
-}
-
-.sublinhado {
-  position: relative; 
-  display: inline-block;
-}
-
-.sublinhado::after {
-  content: ''; 
-  position: absolute; 
-  width: 92%; 
-  height: 8px; 
-  background-color: #0E2646;
-  bottom: 8px; 
-  left: 15px;
-}
-
-#books {
-    display: flex;
-    width: 50%;
-    overflow-x: hidden;
-    position: relative;
-    
-}
-
-.phone-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
- .img-celular{
-    display: block;
-    z-index: 2;
-    position: absolute;
-    width: 353px;
-    height: 670px;
-    
-}
-.ver-mais-link {
-    position: absolute; /* Permite posicionar o link em relação ao container pai (#books) */
-    bottom: 40px;       /* Distância da parte inferior. Ajuste conforme necessário. */
-    right: 10px;        /* Distância da parte direita. Ajuste conforme necessário. */
-    z-index: 2;
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-
-
