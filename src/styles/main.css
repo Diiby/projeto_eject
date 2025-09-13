@@ -143,8 +143,115 @@
     font-weight: bold;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#autor {
+    width: 100%;
+    background-color: #1A1A1A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.info-autor {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.info-autor h2 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.info-autor p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+.info-autor .profissao {
+  color: #2C6FB3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.foto-autor {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
 /* Estilos do Rodapé */
 #footer {
+  width: 100%;
   background-color: #1B4271;
   color: #ffffff;
   padding: 20px; 
@@ -219,4 +326,3 @@ a:hover {
   font-size: 13px;
   text-align: left;
 }
-
