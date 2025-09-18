@@ -104,3 +104,187 @@
                 margin-right: 200px;
             }        
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#autor {
+    width: 100%;
+    background-color: #1A1A1A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 40px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.info-autor {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.info-autor h2 {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.info-autor p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 20px;
+}
+
+.info-autor .profissao {
+  color: #2C6FB3;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.foto-autor {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Estilos do Rodapé */
+#footer {
+  width: 100%;
+  background-color: #1B4271;
+  color: #ffffff;
+  padding: 20px; 
+  font-family: Arial, sans-serif;
+}
+
+/* Container que agrupa as colunas */
+.footer-content {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+/* Estilo todas as colunas */
+.footer-column {
+  flex: 1; 
+  min-width: 250px; 
+  padding: 0 15px; 
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-column p, .footer-column li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #cccccc;
+}
+
+/* Lista da seção "Informações" */
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+}
+
+.social-icons img {
+  width: 24px;
+}
+
+/* Linha de Copyright */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 13px;
+  text-align: left;
+}
