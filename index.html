@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Biblioteca sapiens</title>
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
@@ -15,17 +16,30 @@
     <header>
         <nav id="navbar">
             <img src="src/img/livros.png" alt="">
-            
-                <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#home">Notícias</a></li>
-                <li><a href="#home">Blog</a></li>
-                <li><a href="#home">Sobre nós</a></li>
-                </ul>
-             
-                <a class="btn-inscrever" href="#">TESTAR GRÁTIS</a>                
-            
+            <ul class="menu">
+                <li><a href="#home">Fale Conosco</a></li>
+                <li><a href="#home">Cardápio</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/src/sobre.html">Sobre nós</a></li>
+                <li><a href="/src/promo.html">Promoções e eventos</a></li>
+            </ul>
+            <a class="btn-inscrever" href="#">TESTAR GRÁTIS</a>   
+                
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>             
         </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="#home">Fale Conosco</a></li>
+                <li><a href="#home">Cardápio</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="/src/sobre.html">Sobre nós</a></li>
+                <li><a href="/src/promo.html">Promoções e eventos</a></li>
+            </ul>
+            <a class="btn-inscrever" href="#">TESTAR GRÁTIS</a> 
+        </div>
+
     </header>
     <main id="container-main">
         <section id="home" class="bg-home">
@@ -34,7 +48,7 @@
             <img  src="src/img/mockup.png" alt="">
             </div>
             <div id="cta">
-                <h1 class="title">Sua próxima <br>aventura está nas <br>nossas páginas!</h1>
+                <h1 class="title">Sua próxima aventura está nas nossas páginas!</h1>
                 <div id="teste">
                 <a href="#">TESTAR GRÁTIS</a>
                 </div>
@@ -97,7 +111,7 @@
         <section >
             <div id="container-books" class="bg-books">
                 <div id="books-title">
-                    <h2>Tudo que  você <span class="sublinhado">precisa</span>,<br> junto em um <br> só lugar!</h2>
+                    <h2>Tudo que  você <span class="sublinhado">precisa</span>, junto em um só lugar!</h2>
                 </div>
                 
                 <div class="phone-box">
@@ -173,5 +187,7 @@
         <p>EJECT &copy; Alguns Direitos Reservados</p>
     </div>
 </footer>
+
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>

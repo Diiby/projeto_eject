@@ -5,6 +5,8 @@
     justify-content: center;
     gap: 150px;
     justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 120px;
 }
 
 .plano-card {

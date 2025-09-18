@@ -1,7 +1,8 @@
 /* ------> SEÇÃO 2 <----- */
 
 .container-main {
-    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 #home {
@@ -10,24 +11,30 @@
     position: relative; 
     background-size: cover;
     gap: 71px;
-    
+    overflow: hidden;
 } 
 
-#home .bg-home {
+.bg-home {
     position: absolute;
     width: 100%;
+    /* height: auto; */
     z-index: 0;
     margin-top: -8px;
     margin-left: -5px;
+    object-fit: cover;
 }
 
 #mockup {
     display: flex;
-    max-width: 417px;  
+     
     align-items: end;
     position: relative;
     z-index: 2;
     margin-left: 255px;
+}
+
+#mockup img {
+    /* width: 100%; */
 }
 
 #cta {
@@ -59,4 +66,45 @@
 
 #teste {
     margin-top: 60px;
+}
+
+
+
+@media (max-width: 768px) {
+    #home {
+                flex-direction: column;
+                min-height: auto;
+                width: 100%;
+                padding: 4rem;
+                text-align: center;
+                align-items: center;
+                
+            }
+    #cta {
+                text-align: center;
+                align-items: center; 
+                order: 1; 
+                max-width: 100%;
+                /* margin: auto; */
+            }            
+   
+    #cta .title {
+                font-size: 40px; 
+                
+            }
+
+    #teste a {
+        
+        padding: 0.75rem 1.5rem; 
+        font-size: 1rem; 
+    }
+    #teste {
+                margin-top: 30px;
+            }
+    #mockup {
+                order: 2; 
+                margin-top: 2rem;
+                max-width: 100%; 
+                margin-right: 200px;
+            }        
 }
