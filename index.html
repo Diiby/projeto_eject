@@ -3,58 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Biblioteca sapiens</title>
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/plano.css">
+    <link rel="stylesheet" href="src/styles/book.css">
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <div><img src="src/img/livros.png" alt=""></div>
-            <div class="menu">
-                <a href="#home">Home</a>
-                <a href="#">Notícias</a>
-                <a href="#">Blog</a>
-                <!-- <a href="#">Livros</a> -->
-                <a href="#">Sobre nós</a>
-            </div>  
-            <div class="btn-inscrever">
-                <a href="#">TESTAR GRÁTIS</a>                
-            </div>
+            <img src="src/img/livros.png" alt="">
+            <ul class="menu">
+                <li><a href="#home">Fale Conosco</a></li>
+                <li><a href="#home">Cardápio</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/src/sobre.html">Sobre nós</a></li>
+                <li><a href="/src/promo.html">Promoções e eventos</a></li>
+            </ul>
+            <a class="btn-inscrever" href="#">TESTAR GRÁTIS</a>   
+                
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>             
         </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="#home">Fale Conosco</a></li>
+                <li><a href="#home">Cardápio</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="/src/sobre.html">Sobre nós</a></li>
+                <li><a href="/src/promo.html">Promoções e eventos</a></li>
+            </ul>
+            <a class="btn-inscrever" href="#">TESTAR GRÁTIS</a> 
+        </div>
+
     </header>
     <main id="container-main">
-        <section id="home">
-            <img src="src/img/Rectangle 649.png" alt="">
+        <section id="home" class="bg-home">
+            <img class="bg-home" src="src/img/Rectangle 649.png" alt="">
             <div id="mockup">
             <img  src="src/img/mockup.png" alt="">
             </div>
             <div id="cta">
-                <h1 class="title">Sua próxima <br>aventura está nas <br>nossas páginas!</h1>
+                <h1 class="title">Sua próxima aventura está nas nossas páginas!</h1>
                 <div id="teste">
                 <a href="#">TESTAR GRÁTIS</a>
                 </div>
             </div>
         </section>
-
-        <section id="beneficios">
-            <img src="src/img/beneficios.png" alt="">
-            
+    
+        <section class="plano-section">
+            <div class="plano-card">
+                <div class="plano-valores">
+                    <h3>Tudo isso por apenas</h3>
+                    <h2 class="shadow">R$ 19,90</h2>
+                    <p>no primeiro mês depois</p>
+                    <p>R$ 29,90</p>
+                    <button>Contratar</button>
+                </div>
+                <img src="src/img/celular-2.png" alt="">
+            </div>
+            <div class="beneficios">
+                <h2><span class="ben-color">Benefícios</span> do nosso plano <span class="ben-underline">Angelical</span></h2>
+                <ul>
+                    <li>
+                        <div class="icone">
+                            <img src="src/img/beneficios-1.png" alt="">
+                        </div>
+                        <div class="beneficio-text">
+                            <h3>Curadoria especializada</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget nisi vitae felis pulvinar posuere.</p>                        
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icone">
+                            <img src="src/img/beneficios-2.png" alt="">
+                        </div>
+                        <div class="beneficio-text">
+                            <h3>Comunidade integrada</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget nisi vitae felis pulvinar posuere.</p>                        
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icone">
+                            <img src="src/img/beneficios-3.png" alt="">
+                        </div>
+                        <div class="beneficio-text">
+                            <h3>Economia</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget nisi vitae felis pulvinar posuere.</p>                        
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icone">
+                            <img src="src/img/beneficios-4.png" alt="">
+                        </div>
+                        <div class="beneficio-text">
+                            <h3>Descobertas</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget nisi vitae felis pulvinar posuere.</p>                        
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section id="container-books" class="bg-books">
+        <section >
+            <div id="container-books" class="bg-books">
+                <div id="books-title">
+                    <h2>Tudo que  você <span class="sublinhado">precisa</span>, junto em um só lugar!</h2>
+                </div>
+                
+                <div class="phone-box">
+                    <img class="img-celular" src="src/img/celular_book.png" alt="">
+                </div>
             
-            <div id="books-title">
-                <h1>Tudo que <br> você <span class="sublinhado">precisa</span>,<br> junto em um <br> só lugar!</h1>
-            </div>
-            
-            <div class="phone-box">
-                <img class="img-celular" src="src/img/celular_book.png" alt="">
-            </div>
-            
-            <div id="books">
-                <img src="src/img/books.png" alt="">
+                <div id="books" >
+                    <img src="src/img/books.png" alt="">
+                </div>
+                <div id="ver-mais-link">
+                    <a class="link-a" href="#">Ver mais</a><img src="src/img/Vector.png" alt="">
+                </div>
             </div>
         </section>
     </main>
@@ -196,9 +265,11 @@
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>EJECT &copy; Alguns Direitos Reservados</p>
-        </div>
-    </footer>
+    <div class="footer-bottom">
+        <p>EJECT &copy; Alguns Direitos Reservados</p>
+    </div>
+</footer>
+
+    <script src="src/javascript/script.js"></script>
 </body>
 </html>
