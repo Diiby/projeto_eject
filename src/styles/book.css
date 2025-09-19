@@ -143,6 +143,7 @@
         max-width: 280px;
         height: auto; 
         margin: 0 auto;
+        z-index: 3;
     }
 
     #ver-mais-link {

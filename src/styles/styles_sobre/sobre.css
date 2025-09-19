@@ -135,10 +135,11 @@ header nav ul li {
     margin-right: 19px;
     display: flex;
     max-width: 891px;
-    max-height: 204px; 
+    height: 204px; 
     font-weight: 300;
     text-align: left;
     margin-bottom: 57px;
+    line-height: 35px;
 }
 
 .intro-img img {
@@ -149,18 +150,20 @@ header nav ul li {
 
 .btn-reservar  {
     display: flex;
-    border-radius: 100px;
-    background-color: #CAA072;
-    padding: 10px;
-    max-width: 209px;
     justify-content: center;
+    align-items: center;
 }
 
-.btn-reservar a {
+.btn-reservar a{
+    display: flex;
     text-decoration: none;
     font-size: 20px;
     color: #000000;
     font-weight: 700;
+    border-radius: 100px;
+    background-color: #CAA072;
+    padding: 10px;
+    align-items: center;
 }
 
 
@@ -311,4 +314,69 @@ header nav ul li {
         color: #ffffff;
     } 
 
+}
+
+@media (max-width: 1170px) {
+    .text-h2 h2 {
+        font-size: 32px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .main-container {
+        padding: 40px;
+    }
+
+    .intro-text {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .intro .history {
+        order: 1;
+    }
+
+    .history p {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        margin: auto;
+        height: auto;
+        line-height: 25px;
+    }
+
+    .btn-reservar a {
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .intro-img {
+        margin-bottom: 30px;
+    }
+
+    .intro-h1 {
+        justify-content: center;
+        margin: -50px 0px 30px 0px;
+        text-align: center;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .diferencial-item .icon-bg {
+        width: 125px;
+        height: 120px;
+    }
+
+    .diferencial-item h3 {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .spacing {
+        display: none;
+    }
+    
 }
