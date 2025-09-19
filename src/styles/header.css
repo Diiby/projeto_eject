@@ -75,6 +75,7 @@ header nav ul li {
         font-size: 1.5rem;
         cursor: pointer;
         text-decoration: none;
+        color: #FFFFFF;
     }
     #mobile_menu.active {
         display: flex;
@@ -88,6 +89,7 @@ header nav ul li {
         flex-direction: column;
         gap: 20px;
         margin-bottom: 50px;
+        margin-top: 10px;
     }
 
     #mobile_nav_list li, a {

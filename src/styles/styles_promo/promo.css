@@ -239,6 +239,7 @@ header nav ul li {
         font-size: 1.5rem;
         cursor: pointer;
         text-decoration: none;
+        color: #ffffff;
     }
     #mobile_menu.active {
         display: flex;
@@ -260,6 +261,5 @@ header nav ul li {
         text-decoration: none;
         color: #ffffff;
     } 
-
 
 }
