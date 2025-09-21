@@ -17,16 +17,18 @@
 .bg-home {
     position: absolute;
     width: 100%;
-    /* height: auto; */
     z-index: 0;
     margin-top: -8px;
     margin-left: -5px;
     object-fit: cover;
 }
 
+.bg-home-cel {
+    display: none;
+}
+
 #mockup {
     display: flex;
-     
     align-items: end;
     position: relative;
     z-index: 2;
@@ -66,43 +68,56 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1020px) {
     #home {
-                flex-direction: column;
-                min-height: auto;
-                width: 100%;
-                padding: 4rem;
-                text-align: center;
-                align-items: center;
+        flex-direction: column;
+        min-height: auto;
+        width: 100%;
+        padding: 64px;
+        text-align: center;
+        align-items: center;
                 
-            }
+    }
     #cta {
-                text-align: center;
-                align-items: center; 
-                order: 1; 
-                max-width: 100%;
-                /* margin: auto; */
-            }            
+        text-align: center;
+        align-items: center; 
+        order: 1; 
+    }            
    
     #cta .title {
-                font-size: 40px; 
-                
-            }
+        font-size: 35px; 
+        margin-top: -150px;
+    }
 
     #teste a {
-        
-        padding: 0.75rem 1.5rem; 
-        font-size: 1rem; 
+        padding: 12px 24px; 
+        font-size: 16px; 
     }
+
     #teste {
-                margin-top: 30px;
-            }
+        margin-top: 30px;
+    }
+
     #mockup {
-                order: 2; 
-                margin-top: 2rem;
-                max-width: 100%; 
-                margin-right: 200px;
-            }        
+        order: 2; 
+        margin-top: 32px;
+        margin-right: 250px;
+        position: relative;
+        margin: 0 auto;
+        height: auto;
+    }  
+    
+    #mockup img {
+        margin: 0 auto;
+        max-width: 280px;
+    }
+
+    .bg-home {
+        height: 85%;
+        width: 100%;
+        opacity: 0.7;            
+    }
+    
 }
 
 #planos {
@@ -303,7 +318,193 @@
 }
 
 
+@media (max-width: 1024px) {
+    .plan-card, .plan-card-overlay {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
 
+    .plan-card.card-reverse {
+        flex-direction: column;
+    }
+
+    .overlay-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .overlay-text {
+        flex-basis: 100%;
+    }
+
+    .plan-button {
+        align-self: center;
+    }
+
+    .clientes-grid {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .cliente-card {
+        max-width: 45%;
+    }
+    #autor {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .foto-autor img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .servicos h2 {
+        font-size: 24px;
+    }
+
+    .subli {
+        border-bottom-width: 1.5px;
+    }
+
+    .plan-titulo {
+        font-size: 2rem;
+    }
+
+    .plan-subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .plan-descrição {
+        font-size: 16px;
+    }
+
+    .plan-button {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+
+    .plan-card, .plan-card-overlay {
+        gap: 25px;
+    }
+
+    .overlay-content {
+        gap: 15px;
+    }
+
+    .cliente-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .clientes-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .info-autor h2 {
+        font-size: 2rem;
+    }
+
+    .info-autor .profissao {
+        font-size: 1rem;
+    }
+
+    .info-autor p {
+        font-size: 0.9rem;
+    }
+
+    .footer-column h3 {
+        font-size: 1.2rem;
+    }
+
+    .footer-column p, 
+    .footer-column a, 
+    .footer-column li a {
+        font-size: 0.9rem;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    #planos {
+        padding: 40px 15px;
+    }
+
+    .servicos p {
+        font-size: 12px;
+    }
+
+    .servicos h2 {
+        font-size: 20px;
+    }
+
+    .plan-titulo {
+        font-size: 1.5rem;
+    }
+
+    .plan-subtitulo {
+        font-size: 1rem;
+    }
+
+    .plan-descrição {
+        font-size: 14px;
+    }
+
+    .plan-button {
+        font-size: 12px;
+        padding: 6px 15px;
+    }
+
+    .overlay-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .premium-tag {
+        font-size: 14px;
+    }
+    .info-autor h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-autor .profissao {
+        font-size: 0.9rem;
+    }
+
+    .info-autor p {
+        font-size: 0.8rem;
+    }
+
+    .foto-autor img {
+        max-width: 100%;
+    }
+
+    .footer-column h3 {
+        font-size: 1rem;
+    }
+
+    .footer-column p, 
+    .footer-column a, 
+    .footer-column li a {
+        font-size: 0.8rem;
+    }
+}
 
 
 

@@ -239,6 +239,7 @@ header nav ul li {
         font-size: 1.5rem;
         cursor: pointer;
         text-decoration: none;
+        color: #ffffff;
     }
     #mobile_menu.active {
         display: flex;
@@ -261,5 +262,73 @@ header nav ul li {
         color: #ffffff;
     } 
 
+}
 
+
+@media (max-width: 1170px) {
+    .text-h2 h2 {
+        font-size: 32px;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .main-container {
+        padding: 40px;
+    }
+
+    .promo-card {
+       margin-top: 30px;
+       padding-bottom: 20px;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .sublinhado::after {
+        content: ''; 
+        position: absolute; 
+        width: 65px; 
+        height: 5px; 
+        background-color: #3F2305;
+        bottom: 0px; 
+        left: -15px;
+    }
+
+    .container-3 {
+        flex-direction: column; 
+        align-items: center;               
+        margin-top: 60px;
+        margin-bottom: 100px;
+        gap: 40px; 
+    }
+
+    .container-3 img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .jantar h2 {
+        font-size: 30px; 
+    }
+
+    .bg-jantar {
+        width: 90vw;
+        max-width: 360px;
+        min-height: 300px;
+    }
+
+    .bg-jantar p {
+        font-size: 18px;
+    }
+
+    .promo-card a, .bg-jantar a {
+        color: #000000;
+        background-color: #dad0b5;
+        padding: 10px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 500;
+    }
 }

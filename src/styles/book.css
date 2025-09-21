@@ -99,7 +99,9 @@
     margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 1020px) {
     #container-books {
         flex-direction: column; 
         min-height: auto; 
@@ -141,6 +143,7 @@
         max-width: 280px;
         height: auto; 
         margin: 0 auto;
+        z-index: 3;
     }
 
     #ver-mais-link {
@@ -149,6 +152,6 @@
         right: auto;
         margin-top: 32px; 
         justify-content: center;
-        width: 100%;
+    
     }
 }
