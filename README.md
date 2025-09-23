@@ -1,16 +1,30 @@
 # Projeto eject 💻
 
+
+## O projeto conta com duas Landing Page: Biblioteca Sapiens e Cozinha Lobo.
+
+
+#### - A Cozinha Lobo possui a página principal + páginas adicionais, como: "Fale Conosco", "Cardápio - Menu executivo/completo", "Sobre nós" e "Promoções e Eventos".
+
+#### - A Biblioteca Sapiens não possui páginas adicionais, resumindo-se apenas na página principal.
+
+<br>
+
 ## 🛠️ Tecnologias
 - HTML, CSS e JavaScript
 
 <br>
 
-## O projeto conta com duas Landing Page: Biblioteca Sapiens e Cozinha Lobo.
+## 🤝 Contribuidores 
 
-
-### - A Cozinha Lobo possui a página principal + páginas adicionais, como: "Fale Conosco", "Cardápio - Menu executivo/completo", "Sobre nós" e "Promoções e Eventos".
-
-### - A Biblioteca Sapiens não possui páginas adicionais, resumindo-se apenas na página principal.
+<p>
+  <a href="https://github.com/Diiby">
+    <img src="https://avatars.githubusercontent.com/u/85647882?v=4" width="120px;" alt="Foto do contribuidor"/>
+  </a>
+  <a href="https://github.com/andre-luiz-1999">
+    <img src="https://avatars.githubusercontent.com/u/192721155?v=4" width="120px;" alt="Foto do contribuidor"/>
+  </a>
+</p> 
 
 <br>
 
