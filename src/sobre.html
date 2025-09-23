@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre nós</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="styles/styles_sobre/sobre.css">
+    <title>Sobre nós</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
             <img src="img/logo_lobo.png" alt="">
             <ul class="menu">
-                <li><a href="#home">Fale Conosco</a></li>
-                <li><a href="#home">Cardápio</a></li>
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="/faleconosco.html">Fale Conosco</a></li>
+                <li><a href="/executivo.html">Cardápio</a></li>
+                <li><a href="/page_squad3.html">Home</a></li>
                 <li><a href="/src/sobre.html">Sobre nós</a></li>
                 <li><a href="/src/promo.html">Promoções e eventos</a></li>
             </ul>
-            <a class="btn-inscrever" href="#">RESERVAR AGORA</a>                
+            <a class="btn-inscrever" href="#">RESERVAR AGORA</a>  
+            
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>  
+            
         </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li><a href="/faleconosco.html">Fale Conosco</a></li>
+                <li><a href="/executivo.html">Cardápio</a></li>
+                <li><a href="/page_squad3.html">Home</a></li>
+                <li><a href="/src/sobre.html">Sobre nós</a></li>
+                <li><a href="/src/promo.html">Promoções e eventos</a></li>
+            </ul>
+            <a class="btn-inscrever" href="#">RESERVAR AGORA</a> 
+        </div>
     </header>
 
     <div class="spacing"></div>
@@ -31,7 +48,7 @@
                     <h1>Nossa História</h1>
                 </div>
                 <div class="intro-text ">
-                    <div>
+                    <div class="history">
                         <p>O restaurante de Benjamin Matos nasceu do sonho de transformar a paixão pela culinária em experiências únicas. Inspirado pelas receitas de família e pela tradição de reunir pessoas à mesa, Benjamin uniu ingredientes frescos e técnicas modernas para criar um espaço acolhedor.
                             Hoje, seguimos celebrando a boa comida e a hospitalidade, fazendo de cada visita um momento especial.</p>
                         <div class="btn-reservar">
@@ -125,6 +142,7 @@
             </div>
         </div>
     </section>
-   
+
+    <script src="javascript/script.js"></script>
 </body>
 </html>
