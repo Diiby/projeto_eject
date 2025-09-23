@@ -165,7 +165,54 @@ body {
     line-height: 1.6;
 }
 
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
 /* Responsividade */
+
+@media screen and (max-width: 1170px) {
+    .container nav,
+    .btn-reservar {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    #mobile_nav_list li, a {
+        list-style: none;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+    } 
+
+}
+
 @media (max-width: 992px) {
     .pratos-grid {
         grid-template-columns: repeat(2, 1fr);
