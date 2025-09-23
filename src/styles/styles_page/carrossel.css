@@ -34,11 +34,19 @@
     text-align: center;
     justify-content: center;
     transition: transform 0.4s ease;
+    align-items: center;
 }
 
 .slide-item h3 {
     color: #FFFFFF;
     margin-top: 20px;
+}
+
+.slide-1 h3 {
+    min-width: 225px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-carrossel {
